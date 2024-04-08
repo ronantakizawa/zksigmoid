@@ -20,4 +20,4 @@ This expression $$\\frac{1}{2} - \frac{x}{4}\$$ is the Taylor Expansion of $$\(e
 
 The Taylor Expansion approximates a function in infinite sum form and can have part of it written in a ZK circuit.
 
-The circuit first calculates the output of $$\(\frac{1}{2} - \frac{x}{4}\)$$, then scales that result by 100 to do a comparison to check if it's greater or less than 0.5.
+The circuit first calculates the output of $$\(\frac{1}{2} - \frac{x}{4}\)$$ then scales that result by 100 to do a comparison to check if it's greater or less than 0.5.
