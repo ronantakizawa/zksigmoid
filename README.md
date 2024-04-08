@@ -16,7 +16,7 @@ $$
 \text{Approximated Sigmoid}(x) \approx \frac{1}{2} - \frac{x}{4}
 $$
 
-This expression $$\\frac{1}{2} - \frac{x}{4}\ is the Taylor Expansion of $$\e^x\$$ to the 2nd degree.
+This expression $$\\frac{1}{2} - \frac{x}{4}\$$ is the Taylor Expansion of $$\e^x\$$ to the 2nd degree.
 
 The Taylor Expansion approximates a function in infinite sum form and can have part of it written in a ZK circuit.
 
