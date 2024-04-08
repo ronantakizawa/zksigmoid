@@ -1,15 +1,16 @@
 # zksigmoid
-This circom file is an approximation of a sigmoid function as a ZK circuit. 
 
-Explanation:
-The original sigmoid function is 1/1+e^-x. 
+This circom file is an approximation of a sigmoid function as a ZK (Zero-Knowledge) circuit.
 
-However, e cannot be expressed precisely in a ZK circuit, and raising it to the power of the input is not possible with circom's arithmetic and non-quadratic constraints. 
+### Explanation:
+The original sigmoid function is given by the formula:
 
-To approximate a ZK circuit, the sigmoid function can be expressed as 1/2 - x/4.
+\[ \text{Sigmoid}(x) = \frac{1}{1+e^{-x}} \]
 
- 1/2 - x/4  is the Taylor Expansion of e^x to the 2nd degree. 
+However, \(e\) (Euler's number) cannot be expressed precisely in a ZK circuit, and raising it to the power of the input \(x\) is not feasible with circom's arithmetic and non-quadratic constraints.
 
-The Taylor Expansion approximates a function in infinite sum form and can have part of it written in a ZK circuit. 
+To approximate a sigmoid function in a ZK circuit, the function can be expressed as:
 
+\[ \text{Approximated Sigmoid}(x) = \frac{1}{2} - \frac{x}{4} \]
 
+This expression \(\frac{1}{2} - \frac{x}{4}\) is the Taylor Expansion of \(e^x\) to the 2nd degree. The Taylor Expansion approximates a function in infinite sum form and can have part of it written in a ZK circuit.
