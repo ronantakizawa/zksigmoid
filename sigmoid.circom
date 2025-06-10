@@ -11,6 +11,11 @@ template Sigmoid() {
 
     // Calculating the expression: 1/2 - x/4
     intermediate <== (2 - x) / 4;
+
+    // Rigorously checks the bit-length
+    component num2bits = Num2Bits(100);
+    num2bits.in <== intermediate*100;
+
     //Scale intermediate by *100 to check if its greater than 0.5
     component lessThan = LessThan(100);
     lessThan.in[0] <== intermediate*100;
